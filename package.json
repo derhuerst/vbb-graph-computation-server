@@ -1,0 +1,33 @@
+{
+	"private": true,
+	"name": "vbb-graph-computation-server",
+	"description": "A web service to queue VBB transit map computations.",
+	"version": "0.1.0",
+	"main": "index.js",
+	"keywords": [
+		"vbb",
+		"graph",
+		"transit map",
+		"public transport",
+		"server"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/vbb-graph-computation-server",
+	"repository": "derhuerst/vbb-graph-computation-server",
+	"bugs": "https://github.com/derhuerst/vbb-graph-computation-server/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=6"
+	},
+	"dependencies": {
+	},
+	"devDependencies": {
+		"tape": "^4.6.3",
+		"tap-min": "^1.2.1"
+	},
+	"scripts": {
+		"start": "node index.js",
+		"test": "node test.js | tap-min",
+		"prepublishOnly": "npm test"
+	}
+}
