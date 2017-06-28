@@ -5,11 +5,10 @@ const hsts = require('hsts')
 const corser = require('corser')
 const compression = require('compression')
 const nocache = require('nocache')
-// const path = require('path')
-// const serve = require('serve-static')
 
-const status = require('./lib/status')
 const create = require('./lib/create')
+const status = require('./lib/status')
+const serveFile = require('./lib/serve-file')
 
 const api = express()
 module.exports = api
@@ -19,14 +18,13 @@ const allowed = corser.simpleRequestHeaders.concat(['User-Agent', 'X-Identifier'
 api.use(corser.create({requestHeaders: allowed})) // CORS
 api.use(compression())
 
-// const logosDir = path.dirname(require.resolve('vbb-logos/package.json'))
-// api.use('/logos', serve(logosDir, {index: false}))
-
-// todo: password protection
 const noCache = nocache()
-// api.get('/:id/result', todo)
-api.get('/:id', noCache, status)
+// todo: password protection
+
 api.post('/', noCache, create)
+api.get('/:id', noCache, status)
+api.get('/:id/export', noCache, serveFile('export'))
+api.get('/:id/log', noCache, serveFile('log'))
 
 api.use((err, req, res, next) => {
 	if (res.headersSent) return next()
