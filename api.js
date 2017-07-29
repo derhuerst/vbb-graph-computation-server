@@ -8,6 +8,7 @@ const nocache = require('nocache')
 
 const create = require('./lib/create')
 const status = require('./lib/status')
+const upload = require('./lib/upload')
 const serveFile = require('./lib/serve-file')
 
 const api = express()
@@ -23,6 +24,8 @@ const noCache = nocache()
 
 api.post('/', noCache, create)
 api.get('/:id', noCache, status)
+api.put('/:id/nodes', noCache, upload('nodes.ndjson'))
+api.put('/:id/edges', noCache, upload('edges.ndjson'))
 api.get('/:id/export', noCache, serveFile('export'))
 api.get('/:id/log', noCache, serveFile('log'))
 
