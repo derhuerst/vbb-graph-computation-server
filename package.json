@@ -28,7 +28,9 @@
 		"level-jobs": "^2.0.0",
 		"mkdirp": "^0.5.1",
 		"nocache": "^2.0.0",
-		"send": "^0.15.3"
+		"send": "^0.15.3",
+		"shell-escape-tag": "^1.1.0",
+		"stream-sink": "^2.1.0"
 	},
 	"devDependencies": {
 		"tape": "^4.6.3",
