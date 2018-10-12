@@ -5,6 +5,7 @@
 [![build status](https://img.shields.io/travis/derhuerst/vbb-graph-computation-server.svg)](https://travis-ci.org/derhuerst/vbb-graph-computation-server)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/vbb-graph-computation-server.svg)
 [![chat on gitter](https://badges.gitter.im/derhuerst.svg)](https://gitter.im/derhuerst)
+[![support me on Patreon](https://img.shields.io/badge/support%20me-on%20patreon-fa7664.svg)](https://patreon.com/derhuerst)
 
 
 ## Installing

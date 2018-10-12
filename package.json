@@ -2,7 +2,7 @@
 	"private": true,
 	"name": "vbb-graph-computation-server",
 	"description": "A web service to queue VBB transit map computations.",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"main": "index.js",
 	"keywords": [
 		"vbb",
@@ -25,7 +25,7 @@
 		"corser": "^2.0.1",
 		"express": "^4.15.3",
 		"hsts": "^2.0.0",
-		"level": "^1.7.0",
+		"level": "^4.0.0",
 		"level-jobs": "^2.0.0",
 		"mkdirp": "^0.5.1",
 		"nocache": "^2.0.0",
