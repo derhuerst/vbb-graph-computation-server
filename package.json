@@ -20,6 +20,7 @@
 		"node": ">=6"
 	},
 	"dependencies": {
+		"any-shell-escape": "^0.1.1",
 		"compression": "^1.6.2",
 		"corser": "^2.0.1",
 		"express": "^4.15.3",
@@ -29,7 +30,6 @@
 		"mkdirp": "^0.5.1",
 		"nocache": "^2.0.0",
 		"send": "^0.15.3",
-		"shell-escape-tag": "^1.1.0",
 		"stream-sink": "^2.1.0"
 	},
 	"devDependencies": {
