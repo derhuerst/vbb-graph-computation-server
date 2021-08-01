@@ -29,7 +29,7 @@
 		"level-jobs": "^2.0.0",
 		"mkdirp": "^0.5.1",
 		"nocache": "^2.0.0",
-		"send": "^0.15.3",
+		"send": "^0.17.1",
 		"stream-sink": "^2.1.0"
 	},
 	"devDependencies": {
